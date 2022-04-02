@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe!</h1>
+    </header>
+    <section>
+        <div id="gameBoard">
+            <div id="cell1"></div>
+            <div id="cell2"></div>
+            <div id="cell3"></div>
+            <div id="cell4"></div>
+            <div id="cell5"></div>
+            <div id="cell6"></div>
+            <div id="cell7"></div>
+            <div id="cell8"></div>
+            <div id="cell9"></div>
+        </div>
+    </section>
+    <section class="gameBanner">
+        <div id="radioContainer">
+            <div>
+                <input type="radio" id="player" name="secondPlayer" value="player" checked>
+                <label for="player">Player v Player</label>
+            </div>
+            <div>
+                <input type="radio" id="cpu" name="secondPlayer" value="cpu">
+                <label for="cpu">Player v Computer</label>
+            </div>
+        </div>
+        <div id="displayContainer">
+            <h2 id="display"></h2>
+        </div>
+        <div id="buttonContainer">
+            <input id="startRestartBtn" type="button" value="Start/Restart" onclick="newGame()">
+            <input id="playAgainBtn" type="button" value="Play Again?" onclick="newGame()">
+        </div>
+    </section>
+    <script type="text/javascript" src="ticTacToe.js"></script>
+</body>
+</html>
